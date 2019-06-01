@@ -1,9 +1,9 @@
 # santoni #
 
 # Add to device.mk #
-# Power
-PRODUCT_PACKAGES += \
-    android.hardware.power@1.3-service.santoni
+<# Power>
+<PRODUCT_PACKAGES += \>
+    <android.hardware.power@1.3-service.santoni>
 
 # Add to manifest.xml #
     <hal format="hidl">
