@@ -1,8 +1,20 @@
 # santoni #
-# In device.mk #
+
+# Add to device.mk #
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power@1.3-service.santoni
+
+# Add to manifest.xml #
+    <hal format="hidl">
+        <name>android.hardware.power</name>
+        <transport>hwbinder</transport>
+        <version>1.3</version>
+        <interface>
+            <name>IPower</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
 
 # RQBalance based PowerHAL (binder) #
 
