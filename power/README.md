@@ -1,8 +1,12 @@
 # Santoni readme #
 # Add to device.mk #
-     # Power
-     PRODUCT_PACKAGES += \
-        android.hardware.power@1.3-service.santoni
+        # Power
+        PRODUCT_PACKAGES += \
+            android.hardware.power@1.3-service.santoni
+
+        # OSS Power HAL
+        PRODUCT_PACKAGES += \
+            librqbalance
     
 # Add to manifest.xml #
     <hal format="hidl">
